@@ -1,0 +1,86 @@
+2025-12-24T12:37:13.994694+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/tcpdump -i any port 22 -w ssh_successful_compromise.pcap
+2025-12-24T12:37:13.996092+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T12:45:01.789813+00:00 cyberserver CRON[1123]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-24T12:45:01.799403+00:00 cyberserver CRON[1123]: pam_unix(cron:session): session closed for user root
+2025-12-24T12:47:35.464483+00:00 cyberserver sshd[1128]: Server listening on 0.0.0.0 port 22.
+2025-12-24T12:47:35.464638+00:00 cyberserver sshd[1128]: Server listening on :: port 22.
+2025-12-24T12:48:32.794295+00:00 cyberserver sshd[1129]: Accepted password for testuser from 192.168.56.102 port 49752 ssh2
+2025-12-24T12:48:32.796866+00:00 cyberserver sshd[1129]: pam_unix(sshd:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2025-12-24T12:48:32.823851+00:00 cyberserver systemd-logind[705]: New session 5 of user testuser.
+2025-12-24T12:48:32.849461+00:00 cyberserver (systemd): pam_unix(systemd-user:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2025-12-24T12:55:01.803629+00:00 cyberserver CRON[1223]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-24T12:55:01.808813+00:00 cyberserver CRON[1223]: pam_unix(cron:session): session closed for user root
+2025-12-24T12:56:50.499146+00:00 cyberserver sudo: testuser : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/testuser ; USER=root ; COMMAND=/usr/bin/su
+2025-12-24T12:57:51.574369+00:00 cyberserver sudo: testuser : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/testuser ; USER=root ; COMMAND=/usr/sbin/adduser backdoor
+2025-12-24T12:58:07.028237+00:00 cyberserver sshd[1200]: Received disconnect from 192.168.56.102 port 49752:11: disconnected by user
+2025-12-24T12:58:07.028478+00:00 cyberserver sshd[1200]: Disconnected from user testuser 192.168.56.102 port 49752
+2025-12-24T12:58:07.029897+00:00 cyberserver sshd[1129]: pam_unix(sshd:session): session closed for user testuser
+2025-12-24T12:58:07.114009+00:00 cyberserver systemd-logind[705]: Session 5 logged out. Waiting for processes to exit.
+2025-12-24T12:58:07.114746+00:00 cyberserver systemd-logind[705]: Removed session 5.
+2025-12-24T12:58:17.102956+00:00 cyberserver (sd-pam): pam_unix(systemd-user:session): session closed for user testuser
+2025-12-24T12:58:27.467592+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:00:08.232111+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/mount /dev/sdb1 /media/usb/
+2025-12-24T13:00:08.233587+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:00:18.014646+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:02:07.406288+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/cp ssh_successful_compromise.pcap /media/usb/
+2025-12-24T13:02:07.420798+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:02:07.494120+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:02:34.182017+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/cp auth.log /media/usb/
+2025-12-24T13:02:34.183289+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:02:34.477546+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:03:08.660176+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/cp syslog /media/usb/
+2025-12-24T13:03:08.661642+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:03:08.668877+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:03:19.732676+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/cp syslog.log /media/usb/
+2025-12-24T13:03:19.734625+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:03:19.739495+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:03:56.268621+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2025-12-24T13:03:56.270023+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:03:56.280000+00:00 cyberserver systemd-logind[705]: The system will power off now!
+2025-12-24T13:03:56.335986+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:03:56.362581+00:00 cyberserver systemd-logind[705]: System is powering down.
+2025-12-24T13:09:39.418311+00:00 cyberserver systemd-logind[709]: New seat seat0.
+2025-12-24T13:09:39.418325+00:00 cyberserver systemd-logind[709]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-12-24T13:09:39.418357+00:00 cyberserver systemd-logind[709]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-12-24T13:09:39.418373+00:00 cyberserver systemd-logind[709]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-12-24T13:09:39.418519+00:00 cyberserver polkitd[700]: Loading rules from directory /etc/polkit-1/rules.d
+2025-12-24T13:09:39.418528+00:00 cyberserver polkitd[700]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-12-24T13:09:39.418558+00:00 cyberserver polkitd[700]: Finished loading, compiling and executing 6 rules
+2025-12-24T13:09:39.418577+00:00 cyberserver polkitd[700]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-12-24T13:09:43.992218+00:00 cyberserver login[809]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-12-24T13:09:43.992567+00:00 cyberserver login[809]: PAM adding faulty module: pam_lastlog.so
+2025-12-24T13:09:47.803318+00:00 cyberserver login[809]: pam_unix(login:session): session opened for user logside(uid=1000) by logside(uid=0)
+2025-12-24T13:09:47.849808+00:00 cyberserver systemd-logind[709]: New session 1 of user logside.
+2025-12-24T13:09:47.876866+00:00 cyberserver (systemd): pam_unix(systemd-user:session): session opened for user logside(uid=1000) by logside(uid=0)
+2025-12-24T13:10:29.541574+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/mount /dev/sdb1 /media/usb/
+2025-12-24T13:10:29.542740+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:10:39.243391+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:11:00.395301+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/cp auth.log /media/usb/
+2025-12-24T13:11:00.396696+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:11:00.446392+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:11:16.409647+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/umount /media/usb
+2025-12-24T13:11:16.411222+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:11:16.422842+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:11:29.507723+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2025-12-24T13:11:29.508629+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
+2025-12-24T13:11:29.516365+00:00 cyberserver systemd-logind[709]: The system will power off now!
+2025-12-24T13:11:29.532891+00:00 cyberserver sudo: pam_unix(sudo:session): session closed for user root
+2025-12-24T13:11:29.553547+00:00 cyberserver systemd-logind[709]: System is powering down.
+2025-12-24T13:21:12.000887+00:00 cyberserver systemd-logind[707]: New seat seat0.
+2025-12-24T13:21:12.000900+00:00 cyberserver systemd-logind[707]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-12-24T13:21:12.000906+00:00 cyberserver systemd-logind[707]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-12-24T13:21:12.000912+00:00 cyberserver systemd-logind[707]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-12-24T13:21:12.000954+00:00 cyberserver polkitd[700]: Loading rules from directory /etc/polkit-1/rules.d
+2025-12-24T13:21:12.000966+00:00 cyberserver polkitd[700]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-12-24T13:21:12.000990+00:00 cyberserver polkitd[700]: Finished loading, compiling and executing 6 rules
+2025-12-24T13:21:12.000996+00:00 cyberserver polkitd[700]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-12-24T13:21:40.388082+00:00 cyberserver login[845]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2025-12-24T13:21:40.388348+00:00 cyberserver login[845]: PAM adding faulty module: pam_lastlog.so
+2025-12-24T13:21:42.887296+00:00 cyberserver login[845]: pam_unix(login:auth): check pass; user unknown
+2025-12-24T13:21:42.887532+00:00 cyberserver login[845]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2025-12-24T13:21:45.781466+00:00 cyberserver login[845]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+2025-12-24T13:21:54.147843+00:00 cyberserver login[845]: pam_unix(login:session): session opened for user logside(uid=1000) by LOGIN(uid=0)
+2025-12-24T13:21:54.195145+00:00 cyberserver systemd-logind[707]: New session 1 of user logside.
+2025-12-24T13:21:54.222514+00:00 cyberserver (systemd): pam_unix(systemd-user:session): session opened for user logside(uid=1000) by logside(uid=0)
+2025-12-24T13:23:53.881472+00:00 cyberserver sudo:  logside : TTY=tty1 ; PWD=/home/logside ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/logside/auth.log
+2025-12-24T13:23:53.883642+00:00 cyberserver sudo: pam_unix(sudo:session): session opened for user root(uid=0) by logside(uid=1000)
